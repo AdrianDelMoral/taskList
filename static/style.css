@@ -1,0 +1,80 @@
+body {
+    max-width: 700px;
+    margin: auto;
+}
+
+#tareas {
+    padding: 0;
+    list-style: none;
+    padding: 1rem;
+}
+
+.tarea {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.tarea:hover {
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+
+.tarea + .tarea {
+    margin-top: 10px;
+}
+
+.tarea h2 {
+    margin-top: 0;
+}
+
+.categories {
+    display: flex;
+}
+
+.categories > div {
+    background-color: #0d6efd;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: smaller;
+}
+
+.categories > div + div {
+    margin-left: 5px;
+}
+
+.del-cat {
+    margin-right: 10px;
+    padding: 1px 2px;
+    border: 1px solid #0d6efd;
+}
+
+.del-cat:hover {
+    cursor: pointer;
+    border: 1px solid #0d6efd;
+    color: lightcoral;
+    border-radius: 50%;
+    padding: 1px 2px;
+    background-color: white;
+    color: #0d6efd;
+}
+
+.anyadirTarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#button-add {
+    width: 2rem;
+    height: 2rem;
+    background-color:red;
+    border-color:black;
+    color:black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+

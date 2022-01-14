@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/index.js" defer></script>
+</head>
+
+<body>
+    <h1>Lista de tareas</h1>
+    <div class="anyadirTarea">
+        <div>
+            <label>Titulo Tarea</label>
+            <br>
+            <input type="text" id="input-add">
+        </div>
+        <div>
+            <label>Descripcion</label>
+            <br>
+            <input type="text" id="input-add2">
+        </div>
+        <div>
+            <label>Titulo secciones(separados por , )</label>
+            <br>
+            <input type="text" id="input-add3">
+        </div>
+        <div>
+            <button id="button-add">+</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <label>Filtrar por tipo de Clase:</label>
+    <select value="" id="selector">
+        <option value="" disabled selected>Seleccione una Clase...</option>
+    </select>
+    <button id="mostrarTodos">mostrar todos</button>
+    <br>
+
+    <ul id="tareas"></ul>
+</body>
+
+</html>
